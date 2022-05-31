@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/React_basit_sayac/static/css/main.ca81bd45.css",
+    "main.js": "/React_basit_sayac/static/js/main.433c4657.js",
+    "index.html": "/React_basit_sayac/index.html",
+    "main.ca81bd45.css.map": "/React_basit_sayac/static/css/main.ca81bd45.css.map",
+    "main.433c4657.js.map": "/React_basit_sayac/static/js/main.433c4657.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ca81bd45.css",
+    "static/js/main.433c4657.js"
+  ]
+}
