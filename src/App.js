@@ -1,23 +1,28 @@
-import logo from './logo.svg';
+import React ,{ useState } from 'react';
 import './App.css';
 
 function App() {
+
+  const [deger,setDeger]=useState(0);
+  function Azalt(){
+    setDeger(deger-1);
+  }
+  function Arttır(){
+    setDeger(deger+1);
+  }
+  function Sıfırla(){
+    setDeger(0);
+
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div id="container">
+          <h2 id="sayac">React ile Sayaç</h2>
+          <h1 id="sayı" >{deger}</h1>
+          <button id="azalt"onClick={Azalt}>Azalt</button>
+          <button id="sıfırla" onClick={Sıfırla}>Sıfırla</button>
+          <button id="arttır" onClick={Arttır}>Arttır</button>
+      </div>
     </div>
   );
 }

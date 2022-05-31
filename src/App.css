@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#container{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  width: 40%;
+  height: auto;
+  text-align: center;
+  border-radius: 30px;
+  box-shadow: 0 0 50px red;
+  animation: neon 5s infinite;
 }
-
-.App-link {
-  color: #61dafb;
+@keyframes neon {
+  50% {box-shadow: 0 0 50px yellow ;}
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#sayac{
+  color: orange;
+  font-size: 50px;
+  padding-top: 5%;
+}
+#sayı{
+  color: orange;
+  font-size: 150px;
+}
+#azalt,#arttır,#sıfırla{
+  width: 80%;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 5px 20px;
+}
+#azalt{
+  background-color: rgb(117, 26, 26);
+  color: black;
+}
+#arttır{
+  background-color:rgb(220, 220, 29);
+  color: black;
+}
+#sıfırla{
+  background-color:orange;
+  color: black;
+}
+@media only screen and (width <= 900px) {
+  #sayac{
+    font-size: 25px;
   }
-  to {
-    transform: rotate(360deg);
+  #sayı{
+    font-size: 70px;
   }
 }
